@@ -1,8 +1,8 @@
 // Routes.js
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "components/Home/index.jsx";
-import Denuncias from "components/Denuncias/index.jsx";
+import Home from "pages/Home/index.jsx";
+import Denuncias from "pages/Denuncias/index.jsx";
 
 function Rotas() {
   return (

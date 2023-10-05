@@ -7,17 +7,28 @@
     justify-content: space-evenly;
     height: 70px;
 }
-.nav__container{
- align-items: center;
+
+.nav__container {
+    align-items: center;
 }
 
 .header__title {
     color: #33543D;
     font-weight: 700;
     font-size: 1.5rem;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    left: 72px;
 }
 
-.ligth-title{
+.nav__list {
+    width: 410px;
+    justify-content: space-between;
+}
+
+.ligth-title {
     font-weight: 300;
     margin-left: 1px;
 }
@@ -32,11 +43,10 @@
     font-size: 1.1rem;
     color: #4F4F50;
     font-weight: 500;
-    margin-left: 20px;
     display: flex;
     justify-content: center;
 }
 
-.loginIcon{
-    margin-right: 10px;
+.logoIcon {
+    margin-right: 7px;
 }

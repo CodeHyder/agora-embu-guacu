@@ -47,6 +47,10 @@ table {
 	--font-bold: 700;
 }
 
+.app {
+	height: 100%;
+}
+
 .flex {
 	display: flex;
 }
@@ -60,6 +64,7 @@ table {
 body {
 	font-family: 'Inter', 'sans-serif';
 	box-sizing: border-box;
+	height: 100vh;
 }
 
 /* BOX SERVICES  */

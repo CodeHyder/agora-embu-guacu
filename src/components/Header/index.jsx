@@ -7,8 +7,9 @@ const Header = () => {
     <header className="header">
       <nav className="header__nav flex">
         <div className="nav__container flex">
-          <img src={logo} alt="" />
+         
           <h1 className="header__title">
+          <img src={logo} alt="" className="logoIcon"/>
             <a href="/" className="nav__link">
               ÁGORA<span className="ligth-title">EMBU-GUAÇU</span>
             </a>
