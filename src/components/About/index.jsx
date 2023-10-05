@@ -11,7 +11,6 @@ const About = () => {
           Faça denúncias, acompanhe, receba notificações sobre as principais
           questões do município.
         </p>
-        ooooi
       </div>
 
       <div className="about__img">

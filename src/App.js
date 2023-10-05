@@ -1,19 +1,15 @@
-import About from 'components/About';
-import Header from './components/Header/index.jsx';
-import Services from 'components/Services';
-import './App.css';
-import Search from 'components/Search/index.jsx';
-import Map from 'components/Map/index.jsx';
-import Footer from 'components/Footer/index.jsx';
+// App.js
+import React from "react";
+import "./App.css";
+import Rotas from "./Rotas";
+import Header from "components/Header";
+import Footer from "components/Footer";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <About />
-      <Services />
-      <Search />
-      <Map />
+      <Rotas />
       <Footer />
     </div>
   );

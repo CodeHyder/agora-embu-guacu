@@ -1,0 +1,28 @@
+
+.categorias {
+  width: 1015px;
+  margin: 0 auto;
+  background-color: pink;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.box {
+  background-color: #33543D;
+  padding: 0 20px;
+  border-radius: 20px;
+}
+
+.nav-denuncias {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+button {
+  background-color: #33543D;
+  border-radius: var(--rz-scrollbar-border-radius, 0px);
+  
+}
+
