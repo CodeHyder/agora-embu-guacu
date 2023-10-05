@@ -1,0 +1,41 @@
+.header {
+    height: 70px;
+    background-color: #F4F5F9;
+}
+
+.header__nav {
+    justify-content: space-evenly;
+    height: 70px;
+}
+.nav__container{
+ align-items: center;
+}
+
+.header__title {
+    color: #33543D;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.ligth-title{
+    font-weight: 300;
+}
+
+.nav__item {
+    margin-left: 20px;
+}
+
+.nav__link {
+    text-decoration: none;
+    align-self: center;
+    font-size: 1.1rem;
+    color: #4F4F50;
+    font-weight: 500;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.loginIcon{
+    margin-right: 10px;
+}

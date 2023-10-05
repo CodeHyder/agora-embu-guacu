@@ -1,0 +1,21 @@
+.search__container {
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.search__title {
+    font-size: var(--h1-title);
+    font-weight: var(--font-bold)
+}
+
+.search__subtitle {
+    font-size: 1.5rem;
+}
+
+.search__input{
+    width: 487px;
+    height: 25px;
+}
