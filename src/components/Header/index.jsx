@@ -9,7 +9,7 @@ const Header = () => {
 
                 <div className='nav__container flex'>
                     <img src={logo} alt="" />
-                    <h1 className="header__title">ÁGORA<span className='ligth-title'> EMBU-GUAÇU</span></h1>
+                    <h1 className="header__title">ÁGORA<span className='ligth-title'>EMBU-GUAÇU</span></h1>
                     <ul className='nav__list flex'>
 
                         <li className='nav__item'>
