@@ -18,10 +18,6 @@ Plataforma web que oferecerá uma maneira centralizada para a prefeitura, órgã
 
 Bem-vindo à documentação da API AgoraEmbuGuacuAPI. Esta API permite gerenciar denúncias na cidade de Embu-Guaçu. Abaixo, você encontrará informações detalhadas sobre como usar a interface da API.
 
-## Início Rápido
-
-Este guia rápido fornece uma visão geral da API AgoraEmbuGuacuAPI e como começar a usá-la.
-
 ### Pré-requisitos
 
 Antes de começar, certifique-se de ter os seguintes pré-requisitos instalados em seu sistema:
