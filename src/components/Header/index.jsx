@@ -20,8 +20,8 @@ const Header = () => {
               </a>
             </li>
             <li className="nav__item">
-              <a href="/Denuncias" className="nav__link">
-                Denúncias
+              <a href="/Categorias" className="nav__link">
+                Participação
               </a>
             </li>
             <li className="nav__item">

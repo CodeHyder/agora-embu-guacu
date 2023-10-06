@@ -1,0 +1,18 @@
+.title__container{
+  margin: 20px 0 37px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 90%;
+}
+
+.categorias__title{
+  font-size: var(--h1-title);
+  font-weight: var(--font-bold);
+  margin-bottom: 27px;
+}
+
+.categorias__subtitle{
+  font-size: 1.125rem;
+  font-weight: 400 ;
+}

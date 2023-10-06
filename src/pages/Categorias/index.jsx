@@ -1,27 +1,25 @@
 import React from "react";
-import "./denuncias.css";
-import animalIcon from 'assets/animaisIcon.svg'
- import saudeIcon from 'assets/saudeIcon.svg'
- import moradiaIcon from 'assets/moradiaIcon.svg'
- import meioAmbienteIcon from 'assets/meioAmbienteIcon.svg'
- import transparenciaIcon from 'assets/transparenciaIcon.svg'
- import transporteIcon from 'assets/transporteIcon.svg'
- import segurancaIcon from 'assets/segurancaIcon.svg'
- import educacaoIcon from 'assets/educacaoIcon.svg'
- import estabelecimentoIcon from 'assets/estabelecimentosIcon.svg'
- import servicoPublicoIcon from 'assets/servicoPublicoIcon.svg'
+import "./categorias.css";
+import animalIcon from "assets/animaisIcon.svg";
+import saudeIcon from "assets/saudeIcon.svg";
+import moradiaIcon from "assets/moradiaIcon.svg";
+import meioAmbienteIcon from "assets/meioAmbienteIcon.svg";
+import transparenciaIcon from "assets/transparenciaIcon.svg";
+import transporteIcon from "assets/transporteIcon.svg";
+import segurancaIcon from "assets/segurancaIcon.svg";
+import educacaoIcon from "assets/educacaoIcon.svg";
+import estabelecimentoIcon from "assets/estabelecimentosIcon.svg";
+import servicoPublicoIcon from "assets/servicoPublicoIcon.svg";
 
-function Denuncias() {
+function Categorias() {
   return (
     <section className="section categorias">
-      
       <div className="title__container">
-        <h1 className="categorias__title">Categoria da Denúncia</h1>
-        <p className="categorias__subtitle">Selecione o tipo da sua denúncia.</p>
+        <h1 className="categorias__title">Categorias</h1>
+        <p className="categorias__subtitle">Como o cidadão pode participar?</p>
       </div>
 
       <div className="categorias__container">
-
         <div className="services__container">
           <img src={saudeIcon} alt="" className="services__icon" />
           <p className="services__text">Saúde</p>
@@ -29,11 +27,7 @@ function Denuncias() {
 
         <div className="services__container">
           {" "}
-          <img
-            src={segurancaIcon}
-            alt=""
-            className="services__icon"
-          />
+          <img src={segurancaIcon} alt="" className="services__icon" />
           <p className="services__text">Segurança</p>
         </div>
         <div className="services__container">
@@ -75,16 +69,19 @@ function Denuncias() {
           {" "}
           <img src={servicoPublicoIcon} alt="" className="services__icon" />
           <p className="services__text">Serviços Publicos</p>
-        </div> 
+        </div>
       </div>
-      
+
       <div className="button__container">
-        <a href="/" className="button backButton">Voltar</a>
-        <a href="" className="button">Continuar</a>
+        <a href="/" className="button backButton">
+          Voltar
+        </a>
+        <a href="" className="button">
+          Continuar
+        </a>
       </div>
     </section>
-
   );
 }
 
-export default Denuncias;
+export default Categorias;

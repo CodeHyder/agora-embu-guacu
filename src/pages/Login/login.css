@@ -1,6 +1,37 @@
 .container {
-  width: 90%;
+  width: 400px;
   /* height: 500px; */
-  margin: 0 auto 60px auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+input {
+  outline: none;
+  display: block;
+  width: 100%;
+  border: 1px solid darken(#fff, 15%);
+  margin: 0 0 20px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  font-weight: 400;
+  @include transition(.3s ease);
+  &:focus {
+    border: 1px solid $accent;
+    color: #33543D;
+  }
+}
+
+button {
+  cursor: pointer;
+  background: #33543D;
+  width: 100%;
+  border: 0;
+  padding: 10px 15px;
+  color: #fff;
+  @include transition(.3s ease);
+  &:hover {
+    background: darken(#33543D, 15%);
+  }
 }
