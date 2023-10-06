@@ -40,24 +40,3 @@
   height: 139px;
   margin-bottom: 35px;
 }
-
-.button__container{
-  width: 235px;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.button{
-  padding: 15px;
-  background-color: #33543D;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.12), 0px 1px 3px 0px rgba(0, 0, 0, 0.14); 
-}
-
-.backButton{
-  background-color: #808080;
-}
-

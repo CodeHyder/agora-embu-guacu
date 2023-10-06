@@ -1,23 +1,44 @@
 import React from "react";
 import "./participacao.css";
-// import animalIcon from "assets/animaisIcon.svg";
-// import saudeIcon from "assets/saudeIcon.svg";
-// import moradiaIcon from "assets/moradiaIcon.svg";
-// import meioAmbienteIcon from "assets/meioAmbienteIcon.svg";
-// import transparenciaIcon from "assets/transparenciaIcon.svg";
-// import transporteIcon from "assets/transporteIcon.svg";
-// import segurancaIcon from "assets/segurancaIcon.svg";
-// import educacaoIcon from "assets/educacaoIcon.svg";
-// import estabelecimentoIcon from "assets/estabelecimentosIcon.svg";
-// import servicoPublicoIcon from "assets/servicoPublicoIcon.svg";
 
 function Participacao() {
+  const handleImageUpload = (e) => {
+    const selectedImage = e.target.files[0];
+
+    if (selectedImage) {
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        const imageUrl = event.target.result;
+      };
+      reader.readAsDataURL(selectedImage);
+    }
+  };
+
   return (
     <section className="section categorias">
       <form action="#">
-        <div>
+        <div className="form__input">
+          <label class="desc" id="categoryLabel" for="category">
+            Categoria
+          </label>
+          <div>
+            <select id="category" name="category" tabindex="2">
+              <option value="saude">Saúde</option>
+              <option value="seguranca">Segurança</option>
+              <option value="moradia">Moradia</option>
+              <option value="educacao">Educação</option>
+              <option value="animais">Animais</option>
+              <option value="estabelecimento">Estabelecimento</option>
+              <option value="meioAmbiente">Meio Ambiente</option>
+              <option value="mobilidade">Mobilidade</option>
+              <option value="transparencia">Transparência</option>
+              <option value="servicosPublicos">Serviços Públicos</option>
+            </select>
+          </div>
+        </div>
+        <div className="form__input">
           <label class="desc" id="title1" for="Field1">
-            Full Name
+            Bairro
           </label>
           <div>
             <input
@@ -31,27 +52,57 @@ function Participacao() {
             />
           </div>
         </div>
-
-        <div>
-          <label class="desc" id="title3" for="Field3">
-            Email
+        <div className="form__input">
+          <label class="desc" id="title1" for="Field1">
+            Rua
           </label>
           <div>
             <input
-              id="Field3"
-              name="Field3"
-              type="email"
-              spellcheck="false"
+              id="Field1"
+              name="Field1"
+              type="text"
+              class="field text fn"
               value=""
-              maxlength="255"
-              tabindex="3"
+              size="8"
+              tabindex="1"
             />
           </div>
         </div>
-
-        <div>
+        <div className="form__input">
+          <label class="desc" id="title1" for="Field1">
+            Número, se houver
+          </label>
+          <div>
+            <input
+              id="Field1"
+              name="Field1"
+              type="text"
+              class="field text fn"
+              value=""
+              size="8"
+              tabindex="1"
+            />
+          </div>
+        </div>
+        <div className="form__input">
+          <label class="desc" id="title1" for="Field1">
+            Ponto de Referência
+          </label>
+          <div>
+            <input
+              id="Field1"
+              name="Field1"
+              type="text"
+              class="field text fn"
+              value=""
+              size="8"
+              tabindex="1"
+            />
+          </div>
+        </div>
+        <div className="form__input">
           <label class="desc" id="title4" for="Field4">
-            Message
+            Descrição
           </label>
 
           <div>
@@ -65,58 +116,28 @@ function Participacao() {
             ></textarea>
           </div>
         </div>
-
-        <div>
-          <fieldset>
-            <legend id="title5" class="desc">
-              Select a Choice
-            </legend>
-
-            <div>
-              <input id="radioDefault_5" name="Field5" type="hidden" value="" />
-              <div>
-                <input
-                  id="Field5_0"
-                  name="Field5"
-                  type="radio"
-                  value="First Choice"
-                  tabindex="5"
-                  checked="checked"
-                />
-                <label class="choice" for="Field5_0">
-                  First Choice
-                </label>
-              </div>
-              <div>
-                <input
-                  id="Field5_1"
-                  name="Field5"
-                  type="radio"
-                  value="Second Choice"
-                  tabindex="6"
-                />
-                <label class="choice" for="Field5_1">
-                  Second Choice
-                </label>
-              </div>
-              <div>
-                <input
-                  id="Field5_2"
-                  name="Field5"
-                  type="radio"
-                  value="Third Choice"
-                  tabindex="7"
-                />
-                <label class="choice" for="Field5_2">
-                  Third Choice
-                </label>
-              </div>
-            </div>
-          </fieldset>
+        <div className="form__input">
+          <label class="desc" for="imageUpload">
+            Imagem:
+          </label>
+          <div>
+            <input
+              id="imageUpload"
+              name="imageUpload"
+              type="file"
+              accept="image/*"
+              onChange={handleImageUpload}
+              tabindex="8"
+            />
+          </div>
         </div>
-
-        <div>
-          <input id="saveForm" name="saveForm" type="submit" value="Submit" />
+        <div className="button__container">
+          <a href="/" className="button backButton">
+            Voltar
+          </a>
+          <a href="" className="button" type="submit">
+            Enviar Participação
+          </a>
         </div>
       </form>
     </section>

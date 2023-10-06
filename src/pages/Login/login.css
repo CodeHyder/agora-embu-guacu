@@ -1,6 +1,6 @@
 .container {
   width: 400px;
-  /* height: 500px; */
+  height: 500px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -10,6 +10,7 @@
 input {
   outline: none;
   display: block;
+  min-width: 200px;
   width: 100%;
   border: 1px solid darken(#fff, 15%);
   margin: 0 0 20px;

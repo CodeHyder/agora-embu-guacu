@@ -97,3 +97,50 @@ body {
 	color: white;
 	font-weight: 700;
 }
+
+/* BOTOES */
+
+button {
+  cursor: pointer;
+  background: #33543D;
+  width: 100%;
+  border: 0;
+  padding: 10px 15px;
+  color: #fff;
+  @include transition(.3s ease);
+  &:hover {
+    background: darken(#33543D, 15%);
+  }
+}
+
+.button__container{
+  width: 235px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button{
+  padding: 15px;
+  background-color: #33543D;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.12), 0px 1px 3px 0px rgba(0, 0, 0, 0.14); 
+}
+
+.backButton{
+  background-color: #808080;
+}
+
+/* FORMS */
+
+.form__input {
+display: flex;
+align-items: center;
+}
+
+.form__input label {
+	color: #424242;
+	text-align: left;
+}

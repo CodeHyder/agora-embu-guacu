@@ -62,8 +62,8 @@ function Login() {
       ) : (
         <div className="container">
           <form onSubmit={handleSubmit}>
-            <div>
-              <label htmlFor="cpf">CPF:</label>
+            <div className="form__input">
+              <label htmlFor="cpf">CPF</label>
               <input
                 type="text"
                 id="cpf"
@@ -74,8 +74,8 @@ function Login() {
                 required
               />
             </div>
-            <div>
-              <label htmlFor="password">Senha:</label>
+            <div className="form__input">
+              <label htmlFor="password">Senha</label>
               <input
                 type="password"
                 id="password"
@@ -84,7 +84,9 @@ function Login() {
                 required
               />
             </div>
-            <button type="submit">Login</button>
+            <button type="submit" className="button">
+              Login
+            </button>
           </form>
         </div>
       )}
