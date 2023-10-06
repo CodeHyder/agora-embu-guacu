@@ -7,9 +7,8 @@ const Header = () => {
     <header className="header">
       <nav className="header__nav flex">
         <div className="nav__container flex">
-         
           <h1 className="header__title">
-          <img src={logo} alt="" className="logoIcon"/>
+            <img src={logo} alt="" className="logoIcon" />
             <a href="/" className="nav__link">
               ÁGORA<span className="ligth-title">EMBU-GUAÇU</span>
             </a>
@@ -33,7 +32,7 @@ const Header = () => {
           </ul>
         </div>
 
-        <a href="" className="nav__link">
+        <a href="/Login" className="nav__link">
           <img src={loginIcon} alt="" className="loginIcon" /> Entrar
         </a>
       </nav>
